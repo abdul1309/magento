@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Lemundo_TestTask>
+        <version>0.1.0</version>
+        </Lemundo_TestTask>
+    </modules>
+    <global>
+        <models>
+            <testtask>
+                <class>Lemundo_TestTask_Model_Observer</class>
+            </testtask>
+        </models>
+        <helpers>
+            <testtask>
+                <class>Lemundo_TestTask_Helper</class>
+            </testtask>
+        </helpers>
+        <blocks>
+            <testtask>
+                <class>Lemundo_TestTask_Block</class>
+            </testtask>
+        </blocks>
+        <events>
+            <catalog_product_save_after>
+                <observers>
+                    <testtask>
+                        <class>Lemundo_TestTask_Model_Observer</class>
+                        <method>updateProductName</method>
+                    </testtask>
+                </observers>
+            </catalog_product_save_after>
+        </events>
+    </global>
+</config>

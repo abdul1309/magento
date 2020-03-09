@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <testtask translate="label">
+            <label>Lemundo</label>
+            <sort_order>150</sort_order>
+        </testtask>
+    </tabs>
+    <sections>
+        <testtask translate="label" module="testtask">
+            <label>Testaufgabe</label>
+            <tab>testtask</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            <groups>
+                <general translate="label comment">
+                    <label>General</label>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment><![CDATA[This is a <strong>global comment</strong> about my <em>configuration</em>. You can add a test word for a product name ]]>
+                    </comment>
+                    <fields>
+                        <text_field translate="label comment">
+                            <label>Word-Test</label>
+                            <comment>Text field with store view scope.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </text_field>
+                        <active translate="label comment">
+                            <label>Enable/Disable</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>54</sort_order>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                    </fields>
+                </general>
+            </groups>
+        </testtask>
+    </sections>
+</config>
